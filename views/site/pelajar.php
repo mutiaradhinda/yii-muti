@@ -2,7 +2,7 @@
 use yii\widgets\ActiveForm;
 use yii\helpers\Url;	
 ?>
-<div class="row">
+<!-- <div class="row">
 	<div class="col-sm-6">
 		<?php 
 			$form = ActiveForm::begin([
@@ -21,4 +21,4 @@ use yii\helpers\Url;
 			ActiveForm::end();
 		?>
 	</div>
-</div>
+</div> -->

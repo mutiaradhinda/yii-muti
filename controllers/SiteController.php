@@ -133,13 +133,4 @@ class SiteController extends Controller
         return $this->render('helloWorld', compact('hello'));
     }
 
-    public function actionPelajar()
-    {
-        $model = new Pelajar;
-        if($model->load(Yii::$app->request->post())&&$model->validate()){
-            echo "Sukses!";
-            die();
-        }
-        return $this->render('pelajar', compact('model'));
-    }
 }
