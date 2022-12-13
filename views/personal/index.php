@@ -15,12 +15,20 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="personal-index">
 
-    <h1><?= Html::encode($this->title) ?></h1>
-
-    <p>
-        <?= Html::a('Create Personal', ['create'], ['class' => 'btn btn-success']) ?>
-    </p>
-
+<section class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <!-- left column -->
+          <div class="col-md-12">
+            <!-- general form elements -->
+            <div class="card card-outline">
+              <div class="card-header">
+                <h2 class="card-title">Personal</h2>
+              </div>
+              <div class="card-body">
+                <p>
+                     <?= Html::a('Create Personal', ['create'], ['class' => 'btn btn-success']) ?>
+                </p>
     <?php Pjax::begin(); ?>
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
@@ -45,7 +53,12 @@ $this->params['breadcrumbs'][] = $this->title;
             ],
         ],
     ]); ?>
-
+</div>
     <?php Pjax::end(); ?>
 
+</div>
+</div>
+</div>
+</div>
+</section>
 </div>
